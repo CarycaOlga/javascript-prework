@@ -1,10 +1,10 @@
-function playGame(){
+function playGame (playerInput){
 
   let randomNumber = Math.floor (Math.random () * 3 + 1);
 
   console.log ('Wylosowana liczba to: ' + randomNumber);
 
-  let computerMove = getMoveName (randomNumber);
+  let argComputerMove = getMoveName (randomNumber);
 
   function getMoveName (argMoveId){
     if (argMoveId == 1){
@@ -21,7 +21,7 @@ function playGame(){
 
   console.log ('Gracz wpisał: ' + playerInput);
 
-  let playerMove = getMoveName (playerInput);
+  let argPlayerMove = getMoveName (playerInput);
 
   printMessage ('Twój ruch to: ' + argPlayerMove);
 
