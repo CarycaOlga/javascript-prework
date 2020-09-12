@@ -1,6 +1,6 @@
 function playGame (playerInput){
 
-  function clearMessages ();
+  function clearMessages (){
 
   let randomNumber = Math.floor (Math.random () * 3 + 1);
 
@@ -60,3 +60,9 @@ function playGame (playerInput){
     }
   }
 }
+}
+document.getElementById ('play-rock').addEventListener('click', function(){playGame ('play-rock'); } );
+
+document.getElementById ('play-paper').addEventListener('click', function (){playGame ('play-paper'); } );
+
+document.getElementById ('play-scissors').addEventListener ('click', function (){playGame ('play-scissors'); } );
